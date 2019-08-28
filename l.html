@@ -1,4 +1,3 @@
-    
 <!DOCTYPE html>
 <html >
 <!--From https://codepen.io/frytyler/pen/EGdtg-->
@@ -19,9 +18,9 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-      <input type="text" name="weight" placeholder="Weight" required="required" />
-        <input type="text" name="Step_count" placeholder="step count" required="required" />
-    <input type="text" name="Age" placeholder="age" required="required" />
+      <input type="text" name="step_count" placeholder="Step_Count" required="required" />
+        <input type="text" name="calories_burned" placeholder="Calories_burned" required="required" />
+    <input type="text" name="hours_of_sleep" placeholder="Hour_of_sleep" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
